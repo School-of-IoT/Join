@@ -7,7 +7,7 @@ html {
 	
 }
 body{
-	background: rgb(0 63 118 / 75%);
+	background: rgba(0, 63, 118, 0.75)
 }
 
 h1 {
