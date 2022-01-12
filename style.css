@@ -1,31 +1,38 @@
-body,
+
 html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'Helvetica', sans-serif;
-	background: rgb(26, 188, 156);
-	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	
+}
+body{
+	background: rgb(0 63 118 / 75%);
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 50px;
+
 	margin: 10px 0 0 0;
-	font-weight: lighter;
+	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	color: #eeeeee;
 }
 
 p {
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: light;
+font-family: 'Balsamiq Sans', cursive;
 	color: #333333;
+
+}
+p::selection{
+background-color: #335789
 }
 
 span a {
 	font-size: 18px;
+font-family: 'Balsamiq Sans', cursive;
 	color: #cccccc;
 	text-decoration: none;
 	margin: 0 10px;
@@ -37,7 +44,6 @@ span a {
 
 @keyframes float {
 	0% {
-		
 		transform:  scale(1);
 	}
 	50% {
@@ -52,41 +58,28 @@ span a {
 }
 
 .container {
-	width: 100%;
-	height: 100%;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.avatar {
+.avatar {	
+	margin-top: 10px;
 	overflow: hidden;
-
+	
 	transform: translatey(5px);
 	animation: float 5s ease-in-out infinite;
-	img { width: 100%; height: auto; }
+	
 }
 
 .content {
 	width: 100%;
-	max-width: 600px;
+	max-width: 900px;
 	padding: 20px 40px;
 	box-sizing: border-box;
 	text-align: center;
 }
 
-.suppoprt-me {
-	display: inline-block;
-	position: fixed;
-	bottom: 10px;
-	left: 10px;
-	width: 20vw;
-	max-width: 250px;
-	min-width: 200px;
-	z-index: 9;
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
+
