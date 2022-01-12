@@ -61,9 +61,6 @@ span a {
 }
 
 .avatar {
-	width: 150px;
-	height: 150px;
-
 	overflow: hidden;
 
 	transform: translatey(5px);
