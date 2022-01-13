@@ -13,17 +13,28 @@
         <link rel="manifest" href="assets/favicon/site.webmanifest">
 
 	<title>IoT BOOTCAMP</title>
-	<link rel="stylesheet" href="customstyle.css" />
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Balsamiq+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Baloo+2&family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Baloo+2&family=Balsamiq+Sans&display=swap" >
+<link rel="stylesheet"href="assets/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet"href="assets/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+<link rel="stylesheet" href="customstyle.css" />
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
+
 
 </head>
 
 	<body>
-	
+		<div id="particles-js"></div>
+			<script src="assets/particles.js"></script>
+			<script src="assets/app.js"></script>
 		<div class="container">
 			<h1>Internet Of Things</h1> 
 			<h1 style="font-size: 95px;">Bootcamp</h1>
@@ -34,13 +45,19 @@
 			</div>
 			<div class="content">
 				
-				<p style="font-size: 30px; color: white; ">Join the Community and Build IoT Projects together !!</p>
+				<p style="font-size: 30px; color: white; ">Join the Community and Build IoT Projects together !!</p><br><br>
 				<p>
-					Scroll down to Know More...
-				</p>
-				<br><br><br>
+					👇👇Scroll down to Know More...👇👇
+
+				</p><br><br><br><br><br>
+				<div class="box-2">
+				  <div class="btn1 btn-two">
+				    <span>JOIN NOW</span>
+				  </div>
+				</div>
+
 				<p style="font-size: 20px; color: white; font-family: 'Baloo 2';  text-align: justify;">
-					👇👇 (READ CAREFULLY BEFORE PROCEEDING) 👇👇<br> <br><br><br>
+					<br> <br>
 
 					It is a long term <mark style="background-color: #335789;  color: white;">Bootcamp of 3 months</mark>. ⏳
 					Within this time, we'll discuss, share and learn as much as we can about IoT. 
@@ -103,17 +120,85 @@
 
 		By the end, you will be trained enough of having an IoT system of yourself. Design an IoT system, and contribute to my Open Source IoT server to practice or build IoT projects.
 		<br><br><br>
-		All of this for a price of ₹500 per person. 
-		If you have a referral, eg: a friend, or acquaintance. Then get a discount of 25% per person.
+		But I cannot spend my time and energy without anything in return, so I am putting a Price for this Bootcamp. And it is a <mark style="background-color: #335789;  color: white;">One-time Payment</mark> for the whole Bootcamp, including access to my REST Server for IoT.
+		<br><br>
+		😥All of this for a <mark style="background-color: #335789;  color: white;">price of ₹500 per person</mark>. <br>
+		But if you have a <mark style="background-color: #335789;  color: white;">referral</mark>, eg: a friend, or acquaintance, then you can get a <mark style="background-color: #335789;  color: white;">discount of 25% per person</mark>.🤐 In case you get 4 students who pay the amount, you get the 🆓 <mark style="background-color: #335789;  color: white;">Bootcamp for FREE</mark>. Referred participants will receive a 🎉 <mark style="background-color: #335789;  color: white;">discount of 50% </mark>(not applicable for any further referral).<br><br>
 
-		Everything we discuss would be exclusively available to you for all times. We'll make sure the resources remain with you forever, so that you can use, modify and build on them even in future.
+		Everything we discuss would be <mark style="background-color: #335789;  color: white;">Exclusively available</mark> to you for all times. We'll make sure the resources remain with you forever, so that you can use, modify and build on them even in future.
 
-		Top performers and makers can get the chance and decide on contributing to my ESP32 REST server, by using it for practicing and mostly to store data on it.
+		<mark style="background-color: #335789;  color: white;">Top performers and makers</mark> can get the chance and decide on contributing to my <mark style="background-color: #335789;  color: white;">ESP32 REST server</mark>, by using it for practicing and mostly to store data on it.
 
 		This bootcamp is applicable for students of Class 9 and above.
 </p>
 			</div>
 		</div>
+
+<!------------- PARTICLES ------------->
+
+<!-- count particles 
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+-->
+<!-- particles.js container -->
+
+
+<!-- scripts -->
+
+
+<!-- stats.js -->
+<script src="assets/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  //document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+	
+<!---------------------------------------------->
+
+</script>
+
+
+	<footer>
+	<div class="container3">
+		<div class="	">
+
+               <div class="col-md-12 col-sm-12" style="background-color: white; padding: 50px" >
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1s" style="margin-top: 50px;">
+                         <p style ="font-family: 'Source Sans Pro', sans-serif;font-style: normal;font-weight: 300; color: #000;
+font-size: 16px;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0.2px;">Copyright &copy; 2021 AKI_DEV | Designed by: Akshayan Sinha</p>
+                    </div>
+				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                         <li><a href="https://www.facebook.com/akshayansinha/" class="fa fa-facebook"></a></li>
+                         <li><a href="https://www.instagram.com/akshayansinha/" class="fa fa-instagram"></a></li>
+                         <li><a href="https://github.com/hippyaki/" class="fa fa-github"></a></li>
+                         <li><a href="https://linkedin.com/in/akshayansinha" class="fa fa-linkedin"></a></li>
+			 <li><a href="https://www.hackster.io/akshayansinha" class="fa fa-hackster"></a></li>		
+					
+                    </ul>
+               </div>
+			
+		</div>
+	</div>
+</footer>
 	
 	</body>
 		</html>
