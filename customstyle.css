@@ -6,6 +6,11 @@ html {
 	font-family: 'Helvetica', sans-serif;
 	
 }
+@media only screen and (max-width: 400px) {
+      html {
+        zoom: .7;        
+      }
+    }
 body{
 	background: rgba(0, 63, 118, 0.75);
 	display:grid;
