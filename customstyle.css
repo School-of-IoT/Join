@@ -8,7 +8,7 @@ html {
 }
 @media only screen and (max-width: 400px) {
       html {
-        zoom: .7;        
+        zoom: .5;        
       }
     }
 body{
