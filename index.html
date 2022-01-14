@@ -27,11 +27,71 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 <link rel="stylesheet" href="customstyle.css" />
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" data-deferred="1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
 
+	.label1 {
+  /*display: inline-flex;
+  align-items: center; */
+  cursor: pointer;
+  color: #b6c9d7;
+  position: fixed;
+right: 10px;
+top: 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+
+}
+
+
+.toggle1 {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:
+    -8px -4px 8px 0px #2a6395, 8px 4px 12px 0px #314e67, 4px 4px 4px 0px #bdd3f7 inset, -4px -4px 4px 0px #fff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow:
+    -8px -4px 8px 0px #ebf0f300, 8px 4px 12px 0px #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+.label-text{
+
+	margin-top: 5px;
+}
+</style>
 
 </head>
 
 	<body>
+		<label class="label1" >
+		  <div class="toggle1">
+		    <input class="toggle-state" type="checkbox" name="check" value="check" />
+		    <div class="indicator"></div>
+		  </div>
+		  <div class="label-text">Toggle to PLAY</div>
+		</label>
+
 		<div id="particles-js"></div>
 			<script src="assets/particles.js"></script>
 			<script src="assets/app.js"></script>
@@ -39,8 +99,8 @@
 			<h1>Internet Of Things</h1> 
 			<h1 style="font-size: 95px;">Bootcamp</h1>
 			<div class="avatar">
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdT8Z7z_4rTznKuon37b6JXYy1Opvp2VQF4bvu7Woi5Yl7aJg">
-					<img src="assets/iotcanvas2.png" alt="Click Me - Augmented Enterprises" />
+			<!---	<a href="https://docs.google.com/forms/d/e/1FAIpQLSdT8Z7z_4rTznKuon37b6JXYy1Opvp2VQF4bvu7Woi5Yl7aJg"> --->
+					<img src="assets/iotcanvas2.png" alt="Augmented Enterprises" />
 				</a>
 			</div>
 			<div class="content">
@@ -52,7 +112,7 @@
 				</p><br><br><br><br><br>
 				<div class="box-2">
 				  <div class="btn1 btn-two">
-				    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdT8Z7z_4rTznKuon37b6JXYy1Opvp2VQF4bvu7Woi5Yl7aJg/" style = "color: white"><span>JOIN NOW</span></a>
+				    <a href = "https://forms.gle/kAGWLPqikS3NtTXk6" target="_blank" style = "color: white"><span>JOIN NOW</span></a>
 				  </div>
 				</div>
 
@@ -79,7 +139,9 @@
 					      <div class="card__content">
 					        <h3 class="card__header">Basics of Electronics</h3>
 					        <p class="card__info"><table><tr><td>1. Component of Electricity</td></tr><tr><td>2. Parts of Circuit</td></tr><tr><td>3. Binary Number System</td></tr><tr><td>4. Programming in C/C++</td></tr><tr><td>   </td></tr></table></p>
-					        <button class="card__button">Read now</button>
+					        <div class = "btnbox">
+					        	<button class="card__button">Read now</button>
+					    	</div>
 					      </div>
 					    </div>
 					    <div class="card">
@@ -121,33 +183,40 @@
 		By the end, you will be trained enough of having an IoT system of yourself. Design an IoT system, and contribute to my Open Source IoT server to practice or build IoT projects.
 		<br><br><br>
 		But I cannot spend my time and energy without anything in return, so I am putting a Price for this Bootcamp. And it is a <mark style="background-color: #335789;  color: white;">One-time Payment</mark> for the whole Bootcamp, including access to my REST Server for IoT.
-		<br><br>
-		😥All of this for a <mark style="background-color: #335789;  color: white;">price of ₹500 per person</mark>. <br>
+		<br><br>-----------------👇  IMPORTANT  👇-------------------<br><br>	
+		😥All of this for a <mark style="background-color: #335789;  color: white;">price of ₹500 per person per course</mark>.
 		But if you have a <mark style="background-color: #335789;  color: white;">referral</mark>, eg: a friend, or acquaintance, then you can get a <mark style="background-color: #335789;  color: white;">discount of 25% per person</mark>.🤐 In case you get 4 students who pay the amount, you get the 🆓 <mark style="background-color: #335789;  color: white;">Bootcamp for FREE</mark>. Referred participants will receive a 🎉 <mark style="background-color: #335789;  color: white;">discount of 50% </mark>(not applicable for any further referral).<br><br>
+		
+		For those who wish to have discount on the components can have the whole combo for a <mark style="background-color: #335789;  color: white;">price of ₹2000 per person (all 4 courses)</mark>.
+		There is no discount with this choice.
+		<br><br>----------------------------------------------------<br><br>
 
 		Everything we discuss would be <mark style="background-color: #335789;  color: white;">Exclusively available</mark> to you for all times. We'll make sure the resources remain with you forever, so that you can use, modify and build on them even in future.
 
 		<mark style="background-color: #335789;  color: white;">Top performers and makers</mark> can get the chance and decide on contributing to my <mark style="background-color: #335789;  color: white;">ESP32 REST server</mark>, by using it for practicing and mostly to store data on it.
+		<br><br><mark style="background-color: #335789;  color: white;">To be eligible</mark> for this bootcamp, you need to be in <mark style="background-color: #335789;  color: white;">Class 8 or above</mark>. And have minimum requirement of knowledge of Electricity.<br><br>
+		Find out which module suits you the best.🙌
+		<br><br>
+		
+		1. Class 8 above - Start from 'Basics of Electronics'.<br>
+		2. Class 10/Non Engineers above - Start from 'Dive into Microcontrollers'.<br>
+		3. Graduation (Engineering) - 'Internet of Things (ESP32)'.<br>
+		4. Graduation (Engineering) - 'Web Development with IoT'.<br><br>
 
-		This bootcamp is applicable for students of Class 9 and above.
+		Upon completition of the training, you shall also receive a Certificate. But I will be honest, the certificate is NOT valuable at all. It is the content and knowledge you'll be getting from the Training. Eventually end up being part of <mark style="background-color: #335789;  color: white;">an Open-Source IoT Community</mark>.
+		
 </p>
+
+
+
 			</div>
 		</div>
 
-<!------------- PARTICLES ------------->
-
-<!-- count particles 
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
--->
-<!-- particles.js container -->
+<div style="display: flex;justify-content: center;"><img src="assets/IoT Bootcamp Certificate.png" style="width: 50%;display: flex; margin-bottom: 10px;"></img></div>
 
 
-<!-- scripts -->
+<!------------------ stats.js ------------------->
 
-
-<!-- stats.js -->
 <script src="assets/lib/stats.js"></script>
 <script>
   var count_particles, stats, update;
@@ -156,7 +225,7 @@
   stats.domElement.style.position = 'absolute';
   stats.domElement.style.left = '0px';
   stats.domElement.style.top = '0px';
-  //document.body.appendChild(stats.domElement);
+  //document.body.appendChild(	stats.domElement);
   count_particles = document.querySelector('.js-count-particles');
   update = function() {
     stats.begin();
@@ -199,6 +268,20 @@ letter-spacing: 0.2px;">Copyright &copy; 2021 AKI_DEV | Designed by: Akshayan Si
 		</div>
 	</div>
 </footer>
-	
+	<script type="text/javascript">
+		
+		$(document).ready(function () {
+    $('.toggle-state').click(function (event) {
+        if (this.checked) {
+            //console.log("Checked");
+            $(".particles-js-canvas-el").css("z-index", "0");
+        } else {
+            //console.log("Un-Checked");
+            $(".particles-js-canvas-el").css("z-index", "-1");
+        }
+    });
+});
+
+	</script>
 	</body>
 		</html>
