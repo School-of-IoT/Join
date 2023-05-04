@@ -323,7 +323,6 @@ margin-bottom: 0px;
 canvas{
 z-index: -1;
 position: absolute;
-height: 300% !important;
 }
 
 .label1 {
